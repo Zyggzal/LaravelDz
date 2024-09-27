@@ -24,6 +24,7 @@ class HomeController extends Controller
         // $content = $data[$id];
         // return new Response($content, $status, $header);
         $tasks = Task::all();
+
         return view('Home.Read', compact('tasks'));
     }
 
